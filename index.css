@@ -66,6 +66,7 @@ header .home-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-left: 15px;
 }
 
 header .logo {
@@ -109,7 +110,7 @@ header nav * {
 }
 
 header nav > a, .home-link {
-	transition: 200ms;
+	transition: color 200ms;
 }
 
 @media (hover: hover) {
@@ -144,6 +145,7 @@ header nav .button, .button-large {
 	margin: 0;
 	font-weight: bold;
 	user-select: none;
+	text-wrap: nowrap;
 }
 
 header nav .button:hover, .button-large:hover {
@@ -222,6 +224,10 @@ h1 {
 @media (max-width: 650px) {
 	h1 {
 		font-size: 30px;
+	}
+
+	.banner p {
+		font-size: 1.1em;
 	}
 }
 
@@ -365,6 +371,11 @@ footer .inner .copyright {
 	text-align: right;
 }
 
+footer p {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
 .copyright img {
 	width: 25px;
 	padding-left: 10px;
@@ -374,9 +385,14 @@ footer .inner .copyright {
 @media (max-width: 650px) {
 	footer .inner {
 		flex-wrap: wrap;
+		flex-direction: column;
 	}
 
 	footer .inner * {
 		text-align: center !important;
+	}
+
+	footer p {
+		margin-bottom: 0;
 	}
 }
