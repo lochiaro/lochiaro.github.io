@@ -1,9 +1,11 @@
 let z = 0;
-let imageTime = 500;
-let textTime = 250;
-let offsetTime = 150;
+const imageTime = 500;
+const textTime = 250;
+const offsetTime = 150;
 
-const handleFilmClicked = ({ target }) => {
+const handleFilmClicked = (event) => {
+  const target = event.target;
+
   if (target.style.transform != "rotateY(180deg)") {
     target.parentElement.style.zIndex = ++z;
     target.style.transform = "rotateY(180deg)";
