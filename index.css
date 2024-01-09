@@ -233,9 +233,9 @@ h1 {
 
 h2 {
 	font-size: 40px;
-	margin-top: 48px;
+	margin-top: 30px;
 	margin-bottom: 20px;
-	line-height: 100%;
+	line-height: 180%;
 }
 
 #pastTitle {
